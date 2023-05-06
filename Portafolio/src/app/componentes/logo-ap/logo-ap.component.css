@@ -1,7 +1,7 @@
 .row {
     @media (min-width: 576px)
     {#Logo_a_p {
-        width: 70%;}
+        width: 30%;}
     }
 @media (max-width: 575px)
 {#Logo_a_p {

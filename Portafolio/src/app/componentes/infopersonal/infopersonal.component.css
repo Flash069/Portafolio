@@ -6,25 +6,23 @@ div{
     background-color: rgb(136, 169, 203);
     text-align: left;
 }
-@media (min-width: 576px)
+@media (min-width: 500px)
 {#Perfil
     {position: absolute;
-    width: 30%; 
-    left: 10%;
-    top: 380px} 
+    width: 20%; 
+    right: 10%;
+    top: 250px} 
 }
-@media (max-width: 575px)
+@media (max-width: 499px)
 {#Perfil
     {position: absolute; 
     width: 30%;
     left: 33%;
     top: 250px} 
 }
-@media (min-width: 576px)
+@media (min-width: 499px)
 { #nombre{
-    
-    color: blue;
-    
+
     font-weight: bold;
 }
 }
