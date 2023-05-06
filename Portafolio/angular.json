@@ -26,9 +26,10 @@
             ],
             "styles": [
               "src/styles.css",
-              "Portafolio/node_modules/bootstrap/dist/css/bootstrap.css" 
+              "node_modules/bootstrap/dist/css/bootstrap.css" 
             ],
-            "scripts": [ "Portafolio/node_modules/bootstrap/dist/js/bootstrap.js"]
+            "scripts": [
+               "node_modules/bootstrap/dist/js/bootstrap.js"]
           },
           "configurations": {
             "production": {
