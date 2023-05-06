@@ -11,7 +11,8 @@ import { InfopersonalComponent } from './componentes/infopersonal/infopersonal.c
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import  {  NgCircleProgressModule  }  from  'ng-circle-progress';
-import { CirculosComponent } from './componentes/circulos/circulos.component' ;
+import { CirculosComponent } from './componentes/circulos/circulos.component';
+import { ProyectoFinalComponent } from './componentes/proyecto-final/proyecto-final.component' ;
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CirculosComponent } from './componentes/circulos/circulos.component' ;
     InfopersonalComponent,
     ExperienciaComponent,
     EducacionComponent,
-    CirculosComponent
+    CirculosComponent,
+    ProyectoFinalComponent
   ],
   imports: [
     BrowserModule,
