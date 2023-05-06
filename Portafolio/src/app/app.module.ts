@@ -9,6 +9,7 @@ import { RedesSocialesComponent } from './componentes/redes-sociales/redes-socia
 import { BannerComponent } from './componentes/banner/banner.component';
 import { InfopersonalComponent } from './componentes/infopersonal/infopersonal.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
     RedesSocialesComponent,
     BannerComponent,
     InfopersonalComponent,
-    ExperienciaComponent
+    ExperienciaComponent,
+    EducacionComponent
   ],
   imports: [
     BrowserModule,
