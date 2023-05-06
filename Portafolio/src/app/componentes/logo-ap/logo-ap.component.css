@@ -1,1 +1,10 @@
-#Logo_a_p{width: 100px;}
+.row {
+    @media (min-width: 576px)
+    {#Logo_a_p {
+        width: 70%;}
+    }
+@media (max-width: 575px)
+{#Logo_a_p {
+    width: 50%;}
+}
+}

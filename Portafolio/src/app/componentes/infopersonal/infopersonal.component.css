@@ -1,24 +1,30 @@
 
 .row{ 
-    padding: 20px;
+    padding: 10px;
 }
 div{ 
-    background-color: black;
+    background-color: rgb(136, 169, 203);
     text-align: left;
 }
 @media (min-width: 576px)
 {#Perfil
-    {position: absolute; width: 15%; box-shadow: 3px 3px 3px gray;
-    left: 5%;
-    top: 600px} 
+    {position: absolute;
+    width: 30%; 
+    left: 10%;
+    top: 380px} 
 }
 @media (max-width: 575px)
 {#Perfil
-    {position: absolute; width: 30%; box-shadow: 3px 3px 3px gray;
+    {position: absolute; 
+    width: 30%;
     left: 33%;
-    top: 630px} 
+    top: 250px} 
 }
-#nombre{
+@media (min-width: 576px)
+{ #nombre{
+    
+    color: blue;
+    
     font-weight: bold;
-    margin-top: 20%;
+}
 }
