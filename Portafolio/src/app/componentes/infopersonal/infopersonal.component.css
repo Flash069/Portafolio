@@ -1,10 +1,12 @@
 
 .row{ 
     padding: 10px;
+    
 }
 div{ 
     background-color: rgb(136, 169, 203);
     text-align: left;
+    
 }
 @media (min-width: 500px)
 {#Perfil

@@ -1,11 +1,9 @@
 .row{
-
-
     background-color: rgb(136, 169, 203);
     text-align: center; }
 
 .container{
-    div{ 
-        background-color: rgb(136, 169, 203);
-        text-align: left; }
+    display: inline-block;
+    
+        text-align: center; 
     }
