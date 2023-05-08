@@ -11,4 +11,16 @@ img{width: 50px;
 }
 .redes{
     margin-right: 1em;
+    margin: 1em;
 }
+@media (max-width:500px){
+.container{
+    flex-direction: column;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+    

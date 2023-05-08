@@ -20,7 +20,7 @@ div{
     {position: absolute; 
     width: 30%;
     left: 33%;
-    top: 250px} 
+    top: 550px} 
 }
 @media (min-width: 499px)
 { #nombre{
