@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -13,7 +12,7 @@ import  {  NgCircleProgressModule  }  from  'ng-circle-progress';
 import { CirculosComponent } from './componentes/circulos/circulos.component';
 import { ProyectoFinalComponent } from './componentes/proyecto-final/proyecto-final.component';
 import { FooterComponent } from './componentes/footer/footer.component' ;
-
+import { HttpClient, HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +29,8 @@ import { FooterComponent } from './componentes/footer/footer.component' ;
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule . forRoot ( { })
+    NgCircleProgressModule . forRoot ( { }),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
