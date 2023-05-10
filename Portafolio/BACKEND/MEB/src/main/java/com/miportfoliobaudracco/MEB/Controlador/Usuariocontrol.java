@@ -54,4 +54,8 @@ usuario.setNombre(nuevoNombre);
 iusuarioServicio.saveUsuario(usuario);
 return usuario;
 }
+@GetMapping("/usuario/traer/perfil")
+public Usuario findUsuario(){
+    return iusuarioServicio.findUsuario(Long.1);
+}
 }
