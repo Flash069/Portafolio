@@ -13,6 +13,7 @@ import { CirculosComponent } from './componentes/circulos/circulos.component';
 import { ProyectoFinalComponent } from './componentes/proyecto-final/proyecto-final.component';
 import { FooterComponent } from './componentes/footer/footer.component' ;
 import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { HistorialaboralComponent } from './componentes/historialaboral/historialaboral.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { HttpClient, HttpClientModule} from '@angular/common/http';
     EducacionComponent,
     CirculosComponent,
     ProyectoFinalComponent,
-    FooterComponent
+    FooterComponent,
+    HistorialaboralComponent
   ],
   imports: [
     BrowserModule,

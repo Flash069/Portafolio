@@ -6,7 +6,7 @@
 div{ 
     background-color: rgb(136, 169, 203);
     text-align: left;
-    
+    text-shadow: rgb(237, 22, 237) 0.75px 0.75px 0.75px;    
 }
 @media (min-width: 500px)
 {#Perfil
