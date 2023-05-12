@@ -1,6 +1,8 @@
 .row{
     background-color: rgb(136, 169, 203);
-    text-align: center; }
+    text-align: center;
+    text-shadow: rgb(237, 22, 237) 0.75px 0.75px 0.75px;   
+ }
 
 .container{
     display: inline-block;
