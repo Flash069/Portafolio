@@ -8,7 +8,6 @@ import com.miportfoliobaudracco.MEB.Ente.Usuario;
 import com.miportfoliobaudracco.MEB.Interface.IUsuarioServicio;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -55,7 +54,6 @@ iusuarioServicio.saveUsuario(usuario);
 return usuario;
 }
 @GetMapping("/usuario/traer/perfil")
-public Usuario findUsuario(){
-    return iusuarioServicio.findUsuario(Long.1);
-}
+public Usuario findUsuario(){ 
+    return iusuarioServicio.findUsuario((Long)1);}
 }
