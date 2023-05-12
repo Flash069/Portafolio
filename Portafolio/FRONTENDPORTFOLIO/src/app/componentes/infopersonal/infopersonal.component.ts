@@ -9,6 +9,10 @@ import { UsuarioService } from 'src/app/servicio/usuario.service';
 })
 export class InfopersonalComponent {
 usuario: usuario =new usuario("nombre", "apellido", "imagen");
+
 constructor(public usuarioServicio: UsuarioService){}
-rgOnInti(): void{}
+
+rgOnInti(): void {
+  this.usuarioServicio.getUsuario().subscribe(data => {this.usuario = data})
+}
 }

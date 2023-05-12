@@ -12,7 +12,7 @@ import  {  NgCircleProgressModule  }  from  'ng-circle-progress';
 import { CirculosComponent } from './componentes/circulos/circulos.component';
 import { ProyectoFinalComponent } from './componentes/proyecto-final/proyecto-final.component';
 import { FooterComponent } from './componentes/footer/footer.component' ;
-import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { HistorialaboralComponent } from './componentes/historialaboral/historialaboral.component';
 @NgModule({
   declarations: [
