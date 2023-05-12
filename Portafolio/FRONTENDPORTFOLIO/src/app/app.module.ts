@@ -14,6 +14,8 @@ import { ProyectoFinalComponent } from './componentes/proyecto-final/proyecto-fi
 import { FooterComponent } from './componentes/footer/footer.component' ;
 import { HttpClientModule} from '@angular/common/http';
 import { HistorialaboralComponent } from './componentes/historialaboral/historialaboral.component';
+import { RutadeaccesoComponent } from './componentes/rutadeacceso/rutadeacceso.component';
+import { IngresoComponent } from './componentes/ingreso/ingreso.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,9 @@ import { HistorialaboralComponent } from './componentes/historialaboral/historia
     CirculosComponent,
     ProyectoFinalComponent,
     FooterComponent,
-    HistorialaboralComponent
+    HistorialaboralComponent,
+    RutadeaccesoComponent,
+    IngresoComponent
   ],
   imports: [
     BrowserModule,
