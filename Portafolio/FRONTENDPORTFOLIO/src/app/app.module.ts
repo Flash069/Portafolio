@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
-import { LogoAPComponent } from './componentes/logo-ap/logo-ap.component';
+// import { LogoAPComponent } from './componentes/logo-ap/logo-ap.component';
 import { BannerComponent } from './componentes/banner/banner.component';
 import { InfopersonalComponent } from './componentes/infopersonal/infopersonal.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
@@ -20,7 +20,7 @@ import { IngresoComponent } from './componentes/ingreso/ingreso.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    LogoAPComponent,
+    //LogoAPComponent, 
     BannerComponent,
     InfopersonalComponent,
     ExperienciaComponent,
@@ -30,7 +30,7 @@ import { IngresoComponent } from './componentes/ingreso/ingreso.component';
     FooterComponent,
     HistorialaboralComponent,
     RutadeaccesoComponent,
-    IngresoComponent
+    IngresoComponent,
   ],
   imports: [
     BrowserModule,
