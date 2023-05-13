@@ -8,7 +8,7 @@ const AUTHORITIES_KEY = 'AuthAuthorities';
 export class TokenService {
   Roles: Array<String> = [];
 
-  constructor() { }
+  constructor() { 
   public setToken (token: string): void {
     window.sessionStorage.removeItem(TOKEN_KEY);
     window.sessionStorage.setItem(TOKEN_KEY, token);
@@ -39,4 +39,5 @@ export class TokenService {
   public logOut(): void {
     window.sessionStorage.clear();
   }
+}
 }

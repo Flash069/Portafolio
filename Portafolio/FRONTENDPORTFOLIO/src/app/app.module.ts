@@ -14,9 +14,10 @@ import { FooterComponent } from './componentes/footer/footer.component' ;
 import { HttpClientModule} from '@angular/common/http';
 import { HistorialaboralComponent } from './componentes/historialaboral/historialaboral.component';
 import { RutadeaccesoComponent } from './componentes/rutadeacceso/rutadeacceso.component';
-import { IngresoComponent } from './componentes/ingreso/ingreso.component';
+//import { IngresoComponent } from './componentes/ingreso/ingreso.component';
 import { LogoAPComponent } from './componentes/logo-ap/logo-ap.component';
-import { ModeloComponent } from './modelo/modelo.component';
+//import { ModeloComponent } from './modelo/modelo.component';
+import { InterceptorService } from './servicio/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -31,9 +32,9 @@ import { ModeloComponent } from './modelo/modelo.component';
     FooterComponent,
     HistorialaboralComponent,
     RutadeaccesoComponent,
-    IngresoComponent,
+   // IngresoComponent,
   LogoAPComponent,
- ModeloComponent,
+// ModeloComponent,
  
   ],
   imports: [
@@ -42,7 +43,9 @@ import { ModeloComponent } from './modelo/modelo.component';
     NgCircleProgressModule . forRoot ( { }),
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    InterceptorService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
