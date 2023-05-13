@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.BACK.Portafolio.Seguridad.Ente;
+package com.BACK.Portafolio.Security.Entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -17,10 +17,6 @@ import jakarta.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- *
- * @author Euge
- */
 @Entity
 public class Usuario {
     @Id
@@ -28,17 +24,16 @@ public class Usuario {
     private int id;
     @NotNull
     private String nombre;
-    @NotNull 
-    @Column (unique = true)
+    @NotNull
+    @Column(unique = true)
     private String nombreUsuario;
     @NotNull
     private String email;
     @NotNull
     private String password;
-    
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name ="Usuario_nombre", joinColumns = @JoinColumn (name ="Usuario_id"),inverseJoinColumns = @JoinColumn(name = "nombre_id"))
-private Set<Nombre> nombres = new HashSet<>();
+    @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
+    private Set<Rol> roles = new HashSet<>();
 
     public Usuario() {
     }
@@ -90,12 +85,13 @@ private Set<Nombre> nombres = new HashSet<>();
         this.password = password;
     }
 
-    public Set<Nombre> getNombres() {
-        return nombres;
+    public Set<Rol> getRoles() {
+        return roles;
     }
 
-    public void setNombres(Set<Nombre> nombres) {
-        this.nombres = nombres;
+    public void setRoles(Set<Rol> roles) {
+        this.roles = roles;
     }
-    
-            }
+
+
+}

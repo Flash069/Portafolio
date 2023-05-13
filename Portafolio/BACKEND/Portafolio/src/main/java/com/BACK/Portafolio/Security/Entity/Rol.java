@@ -1,7 +1,10 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.BACK.Portafolio.Security.Entity;
 
-package com.BACK.Portafolio.Seguridad.Ente;
-
-import com.BACK.Portafolio.Seguridad.Enums.RolNombre;
+import com.BACK.Portafolio.Security.Enums.RolNombre;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -10,12 +13,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 
-/**
- *
- * @author Euge
- */
 @Entity
-public class Nombre {
+public class Rol {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -23,10 +22,10 @@ public class Nombre {
     @Enumerated(EnumType.STRING)
     private RolNombre rolNombre;
 
-    public Nombre() {
+    public Rol() {
     }
 
-    public Nombre(RolNombre rolNombre) {
+    public Rol(RolNombre rolNombre) {
         this.rolNombre = rolNombre;
     }
 
@@ -45,6 +44,8 @@ public class Nombre {
     public void setRolNombre(RolNombre rolNombre) {
         this.rolNombre = rolNombre;
     }
+    
+    
     
     
 }
