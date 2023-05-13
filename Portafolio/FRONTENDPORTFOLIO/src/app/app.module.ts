@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
-// import { LogoAPComponent } from './componentes/logo-ap/logo-ap.component';
 import { BannerComponent } from './componentes/banner/banner.component';
 import { InfopersonalComponent } from './componentes/infopersonal/infopersonal.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
@@ -16,11 +15,11 @@ import { HttpClientModule} from '@angular/common/http';
 import { HistorialaboralComponent } from './componentes/historialaboral/historialaboral.component';
 import { RutadeaccesoComponent } from './componentes/rutadeacceso/rutadeacceso.component';
 import { IngresoComponent } from './componentes/ingreso/ingreso.component';
+import { LogoAPComponent } from './componentes/logo-ap/logo-ap.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    //LogoAPComponent, 
     BannerComponent,
     InfopersonalComponent,
     ExperienciaComponent,
@@ -31,6 +30,7 @@ import { IngresoComponent } from './componentes/ingreso/ingreso.component';
     HistorialaboralComponent,
     RutadeaccesoComponent,
     IngresoComponent,
+    LogoAPComponent,
   ],
   imports: [
     BrowserModule,
