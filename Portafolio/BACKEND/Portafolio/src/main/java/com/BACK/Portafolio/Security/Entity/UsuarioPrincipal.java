@@ -11,6 +11,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 public class UsuarioPrincipal implements UserDetails {
 
+    public static UserDetails build(com.BACK.Portafolio.Ente.Usuario usuario) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     private String nombre;
     private String nombreUsuario;
     private String email;
