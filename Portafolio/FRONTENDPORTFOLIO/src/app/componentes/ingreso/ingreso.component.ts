@@ -19,7 +19,7 @@ errMsj: string;
 
   constructor(private tokenService: TokenService, private authService: AuthService, private router : Router ) {}
 
-    ngOnInit() void: {
+    ngOnInit(): void {
       if (this.tokenService.getToken())
       {
         this.isLogged = true;
