@@ -16,7 +16,8 @@ import { HistorialaboralComponent } from './componentes/historialaboral/historia
 import { RutadeaccesoComponent } from './componentes/rutadeacceso/rutadeacceso.component';
 import { IngresoComponent } from './componentes/ingreso/ingreso.component';
 import { LogoAPComponent } from './componentes/logo-ap/logo-ap.component';
-import { ModeloComponent } from './modelo/modelo.component';
+//import { LogoAPComponent } from './componentes/logo-ap/logo-ap.component';
+//import { ModeloComponent } from './modelo/modelo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,8 +32,10 @@ import { ModeloComponent } from './modelo/modelo.component';
     HistorialaboralComponent,
     RutadeaccesoComponent,
     IngresoComponent,
-    ModeloComponent,
-    LogoAPComponent
+  //  ModeloComponent,
+  LogoAPComponent,
+ ModeloComponent,
+ 
   ],
   imports: [
     BrowserModule,
