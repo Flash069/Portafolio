@@ -22,7 +22,7 @@ import java.util.Set;
  * @author Euge
  */
 @Entity
-public class User {
+public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -37,13 +37,13 @@ public class User {
     private String password;
     
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name ="User_nombre", joinColumns = @JoinColumn (name ="User_id"),inverseJoinColumns = @JoinColumn(name = "nombre_id"))
+    @JoinTable(name ="Usuario_nombre", joinColumns = @JoinColumn (name ="Usuario_id"),inverseJoinColumns = @JoinColumn(name = "nombre_id"))
 private Set<Nombre> nombres = new HashSet<>();
 
-    public User() {
+    public Usuario() {
     }
 
-    public User(String nombre, String nombreUsuario, String email, String password) {
+    public Usuario(String nombre, String nombreUsuario, String email, String password) {
         this.nombre = nombre;
         this.nombreUsuario = nombreUsuario;
         this.email = email;
