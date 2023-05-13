@@ -3,6 +3,9 @@ import { Injectable } from '@angular/core';
 import { usuario } from '../Modelo/usuario.module';
 import { Observable } from 'rxjs';
 
+const TOKEN_KEY = 'AuthToken';
+const USERNAME_KEY = 'AuthUserName';
+const AUTHORITIES_KEY = 'AuthAuthorities';
 @Injectable({
   providedIn: 'root'
 })
