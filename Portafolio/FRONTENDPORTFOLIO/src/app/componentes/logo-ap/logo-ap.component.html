@@ -17,7 +17,8 @@
     <a href= "/login"> <!--"https://www.linkedin.com/in/euge-flash-528970246/" -->  
         <img src="../../../assets/Imagenes Logos/LINKEDIN.png" id="Logo_linkedin" alt=""></a>
    
-    <button type="button" class="btn btn-outline-light .btn-block" (click)= "ingreso()" id="INGRESO"><B>INGRESO</B></button>
+    <button type="button" class="btn btn-outline-light .btn-block" (click)= "ingreso()" id="INGRESO" ngIf="!isLogged" ><B>INGRESO</B></button>
+    <button type="button" class="btn btn-outline-light .btn-block" (click)= "onLogOut" id="INGRESO" ngIF ="isLogged"><B>Cerrar Sesión</B></button>
 </div>
 </div>
 </div>
