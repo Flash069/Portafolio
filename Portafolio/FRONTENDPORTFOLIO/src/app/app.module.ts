@@ -14,10 +14,9 @@ import { FooterComponent } from './componentes/footer/footer.component' ;
 import { HttpClientModule} from '@angular/common/http';
 import { HistorialaboralComponent } from './componentes/historialaboral/historialaboral.component';
 import { RutadeaccesoComponent } from './componentes/rutadeacceso/rutadeacceso.component';
-//import { IngresoComponent } from './componentes/ingreso/ingreso.component';
 import { LogoAPComponent } from './componentes/logo-ap/logo-ap.component';
-//import { ModeloComponent } from './modelo/modelo.component';
 import { InterceptorService } from './servicio/interceptor-service';
+import { IngresoComponent } from './componentes/ingreso/ingreso.component';
 
 @NgModule({
   declarations: [
@@ -32,9 +31,8 @@ import { InterceptorService } from './servicio/interceptor-service';
     FooterComponent,
     HistorialaboralComponent,
     RutadeaccesoComponent,
-   // IngresoComponent,
   LogoAPComponent,
-// ModeloComponent,
+  IngresoComponent,
  
   ],
   imports: [
