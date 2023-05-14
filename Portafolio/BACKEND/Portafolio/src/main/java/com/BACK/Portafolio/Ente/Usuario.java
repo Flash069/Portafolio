@@ -35,6 +35,10 @@ import lombok.Setter;
     @Size (min = 4, max = 20, message = "No cumple con la longitud (4 a 20 caracteres")
     private String img;
 
+    public Usuario(String nombre, String nombreUsuario, String email, String encode) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public Long getId() {
         return id;
     }

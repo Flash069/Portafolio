@@ -6,10 +6,7 @@ package com.BACK.Portafolio.Security.Dto;
 
 import jakarta.validation.constraints.NotBlank;
 
-/**
- *
- * @author Euge
- */
+
 public class LoginUsuario {
     @NotBlank
    private String nombreUsuario;

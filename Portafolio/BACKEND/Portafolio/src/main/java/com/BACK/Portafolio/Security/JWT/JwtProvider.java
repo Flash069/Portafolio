@@ -58,4 +58,8 @@ private int expiration;
     }
         return false;
     }
+
+    public String generateToken(Authentication authentication) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
