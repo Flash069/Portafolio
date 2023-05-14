@@ -4,12 +4,14 @@
  */
 package com.BACK.Portafolio.Ente;
 
+import com.BACK.Portafolio.Security.Entity.Rol;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import java.util.Set;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -63,6 +65,10 @@ import lombok.Setter;
 
     public void setImg(String img) {
         this.img = img;
+    }
+
+    public void setRoles(Set<Rol> roles) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 

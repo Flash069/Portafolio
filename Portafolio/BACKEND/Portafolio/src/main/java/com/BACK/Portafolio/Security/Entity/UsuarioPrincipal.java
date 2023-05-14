@@ -1,10 +1,11 @@
 package com.BACK.Portafolio.Security.Entity;
 
+//import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 import static org.hibernate.internal.util.PropertiesHelper.map;
-import org.hibernate.sql.ast.tree.expression.Collation;
+//import org.hibernate.sql.ast.tree.expression.Collation;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,7 +13,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 public class UsuarioPrincipal implements UserDetails {
 
     public static UserDetails build(com.BACK.Portafolio.Ente.Usuario usuario) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return null;
     }
 
     private String nombre;
@@ -21,7 +22,7 @@ public class UsuarioPrincipal implements UserDetails {
     private String password;
     private Collection<? extends GrantedAuthority> authorities;
 
-       public UsuarioPrincipal(String nombre, String nombreUsuario, String email, String password,Collection<? extends GrantedAuthority> authorities) {
+       public UsuarioPrincipal(String nombre, String nombreUsuario, String email, String password,  Collection<? extends GrantedAuthority> authorities) {
         this.nombre = nombre;
         this.nombreUsuario = nombreUsuario;
         this.email = email;
@@ -30,12 +31,16 @@ public class UsuarioPrincipal implements UserDetails {
     }
 
     public static UsuarioPrincipal build(Usuario usuario) {
-        List<GrantedAuthority> authorities = usuario.getRoles().stream()
-                .map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors.
-                toList());
+        List<GrantedAuthority> authorities = usuario.getRoles().stream().map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors.toList());
         return new UsuarioPrincipal(usuario.getNombre(), usuario.getNombreUsuario(), usuario.getEmail(), usuario.getPassword(), authorities);
     }
-
+  //private List<GrantedAuthority> buildAuthorities(List<String> roles) {
+    //    List<GrantedAuthority> authorities = new ArrayList<>();
+      //  for (String role : roles) {
+        //    authorities.add(new SimpleGrantedAuthority(role));
+        //}
+        //return authorities;
+    //}
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return authorities;
