@@ -7,10 +7,7 @@ package com.BACK.Portafolio.Security.Dto;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- *
- * @author Euge
- */
+
 public class NuevoUsuario {
     private String nombre;
     private String nombreUsuario;

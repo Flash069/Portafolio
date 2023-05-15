@@ -14,8 +14,12 @@ import jakarta.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ *
+ * @author Euge
+ */
 @Entity
-public class Usuario {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -32,10 +36,10 @@ public class Usuario {
     @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
     private Set<Rol> roles = new HashSet<>();
 
-    public Usuario() {
+    public User() {
     }
 
-    public Usuario(String nombre, String nombreUsuario, String email, String password) {
+    public User(String nombre, String nombreUsuario, String email, String password) {
         this.nombre = nombre;
         this.nombreUsuario = nombreUsuario;
         this.email = email;

@@ -15,10 +15,7 @@ import java.util.Set;
 import lombok.Getter;
 import lombok.Setter;
 
-/**
- *
- * @author Euge
- */
+
 @Getter @Setter
 @Entity
 

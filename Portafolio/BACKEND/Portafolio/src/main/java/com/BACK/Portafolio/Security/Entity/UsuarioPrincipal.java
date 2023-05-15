@@ -30,9 +30,9 @@ public class UsuarioPrincipal implements UserDetails {
         this.authorities = authorities;
     }
 
-    public static UsuarioPrincipal build(Usuario usuario) {
-        List<GrantedAuthority> authorities = usuario.getRoles().stream().map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors.toList());
-        return new UsuarioPrincipal(usuario.getNombre(), usuario.getNombreUsuario(), usuario.getEmail(), usuario.getPassword(), authorities);
+    public static UsuarioPrincipal build(User user) {
+        List<GrantedAuthority> authorities = user.getRoles().stream().map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors.toList());
+        return new UsuarioPrincipal(user.getNombre(), user.getNombreUsuario(), user.getEmail(), user.getPassword(), authorities);
     }
   //private List<GrantedAuthority> buildAuthorities(List<String> roles) {
     //    List<GrantedAuthority> authorities = new ArrayList<>();
